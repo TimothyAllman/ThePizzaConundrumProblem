@@ -8,12 +8,13 @@ authors = [
 ]
 requires-python = ">=3.10"
 dependencies = [
-    "pandas>=2.2.3", #for data manipulations
+    "pandas>=2.2.3",    #for data manipulations
+    "ploomber>=0.23.3",
 ]
 
 [dependency-groups]
 dev = [
-    "uv",        #for pacakge managemnt and dependecy resolution
+    "uv",        #for package managemnt and dependency resolution
     "ipykernel", #for running notebook cells in vscode
     "pytest",    #for testing
 ]
