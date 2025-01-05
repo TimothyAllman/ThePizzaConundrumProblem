@@ -1,13 +1,7 @@
 0.0.1
 Jan 5 2024
-- Add default/results pipeline.yaml
-- Add reports pipeline.yaml
-- Add placeholder/tamplate tasks.py files
-- Add changelog
-- Add gitignore file
-- Add Readme
-- Add RunMe.ipynb notebook 
-- Add InstallMe.ipynb notebook 
+- Add uv for dependency management
+
 
 0.0.1
 June 9 2024
