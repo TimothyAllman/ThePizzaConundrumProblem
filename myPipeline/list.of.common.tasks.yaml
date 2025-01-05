@@ -34,12 +34,13 @@
   product:
       nb: products/{{MY_FOLDER}}/notebooks/ConstantsFromFilePaths.ipynb
 
-      # hardcoded/defined paths for top level folders
-      HARD_CODED_PATH_TO_REPORTS_FOLDER: reports/
+      # hardcoded/defined paths for main top level folder 
+      ABSOLUTE_PATH_TO_MY_FOLDER: products/{{MY_FOLDER}}/
 
-      # file paths we "create"  inside the tasks using the above top level folders  and which will be used in other tasks
+      # file paths we reference or  get "created"  inside the tasks using the above top level folder and generate folder and which will be used in other tasks
       ABSOLUTE_PATH_TO_GRAPH_1_PLOTLY_PNG: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_GRAPH_1_PLOTLY_PNG.pkl
       ABSOLUTE_PATH_TO_DATA_1_XLSX: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_DATA_1_XLSX.pkl
+      ABSOLUTE_PATH_TO_DATA_2_XLSX: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_DATA_2_XLSX.pkl
 
 
 
