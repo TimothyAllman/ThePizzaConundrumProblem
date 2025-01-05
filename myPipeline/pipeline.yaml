@@ -5,24 +5,24 @@ tasks:
   # tasks to get/fetch data from some central source
   - source: tasks/taskGetData1.py
     product:
-        nb: products/{{MY_FOLDER}}/notebooks/taskGetData1.ipynb
+        nb: products/{{MY_FOLDER}}/tasksThatRan/taskGetData1.ipynb
         MY_VAR1: products/{{MY_FOLDER}}/sharedVariables/MY_VAR1.pkl
 
   - source: tasks/taskGetData2.py
     product:
-        nb: products/{{MY_FOLDER}}/notebooks/taskGetData2.ipynb
+        nb: products/{{MY_FOLDER}}/tasksThatRan/taskGetData2.ipynb
         MY_VAR2: products/{{MY_FOLDER}}/sharedVariables/MY_VAR2.pkl
 
 
   # tasks to do calcs/transform data 
   - source: tasks/taskDoCalc1.py
     product:
-        nb: products/{{MY_FOLDER}}/notebooks/taskDoCalc1.ipynb
+        nb: products/{{MY_FOLDER}}/tasksThatRan/taskDoCalc1.ipynb
         MY_VAR3: products/{{MY_FOLDER}}/sharedVariables/MY_VAR3.pkl
 
   - source: tasks/taskDoCalc2.py
     product:
-        nb: products/{{MY_FOLDER}}/notebooks/taskDoCalc2.ipynb
+        nb: products/{{MY_FOLDER}}/tasksThatRan/taskDoCalc2.ipynb
         MY_VAR4: products/{{MY_FOLDER}}/sharedVariables/MY_VAR4.pkl
 
 
@@ -45,7 +45,7 @@ tasks:
       exclude_output_prompt: True # get rid of the e.g. `Output ln[10]` on the left hand side of a notebook when it is exported
     
     product:
-        nb_ipynb: products/{{MY_FOLDER}}/documents/DocumentationPdfOfFaq.ipynb
+        nb_ipynb: products/{{MY_FOLDER}}/tasksThatRan/DocumentationPdfOfFaq.ipynb
         nb_pdf: products/{{MY_FOLDER}}/documents/DocumentationPdfOfFaq.pdf
         nb_html: products/{{MY_FOLDER}}/documents/DocumentationPdfOfFaq.html
 
@@ -68,7 +68,7 @@ tasks:
       exclude_output_prompt: True # get rid of the e.g. `Output ln[10]` on the left hand side of a notebook when it is exported
     
     product:
-        nb_ipynb: products/{{MY_FOLDER}}/documents/DocumentationPdfOfStepByStepGuide.ipynb
+        nb_ipynb: products/{{MY_FOLDER}}/tasksThatRan/DocumentationPdfOfStepByStepGuide.ipynb
         nb_pdf: products/{{MY_FOLDER}}/documents/DocumentationPdfOfStepByStepGuide.pdf
         nb_html: products/{{MY_FOLDER}}/documents/DocumentationPdfOfStepByStepGuide.html
 
