@@ -1,23 +1,44 @@
 [project]
-name = "thepizzaconundrumproblem"
-version = "0.0.0"
+name = "ploomberpipelinetemplate"
+version = "0.0.0" #in version.txt
 description = "Add your description here"
 readme = "README.md"
 authors = [
     { name = "TimothyAllman", email = "166746823+TimothyAllman@users.noreply.github.com" },
 ]
 requires-python = ">=3.10"
+
 dependencies = [
-    "pandas>=2.2.3",    #for data manipulations
-    "ploomber>=0.23.3",
+    #for pipeline
+    "ploomber",
+
+    #for storing/retrieving/serialising variables between tasks
+    "cloudpickle",
+
+    #for data manipulation
+    "pandas",
+
+    #for graphs and visualisations
+    "plotly",
+
+    #for saving graphs as .png
+    "kaleido==0.2.0",
+
+    #for powerpoint/report creation
+    "python-pptx",
+
+    #for nice tables
+    "great-tables",
 ]
+
 
 [dependency-groups]
 dev = [
-    "uv",        #for package managemnt and dependency resolution
-    "ipykernel", #for running notebook cells in vscode
-    "pytest",    #for testing
+    "uv",        #for package managment and dependency resolution
+    "ipykernel", #for running ipynb files inside VsCode 
+    "pytest",    #for tests
 ]
+
 
 [build-system]
 requires = ["hatchling"]

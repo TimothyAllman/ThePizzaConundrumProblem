@@ -29,3 +29,8 @@ product = None
 
 # %%
 # your code here...
+
+import ploomberpipelinetemplate.ConstantsDataModule
+
+# %%
+ploomberpipelinetemplate.ConstantsDataModule.MY_CONSTANT_1

@@ -29,31 +29,3 @@ product = None
 
 # %%
 # your code here...
-
-# %%
-from pathlib import Path
-import cloudpickle
-
-
-# %%
-def FUNC_1():
-    return 11111
-
-
-# pickle/store stuff to use later
-Path(str(product["FUNC_1"])).parent.mkdir(exist_ok=True, parents=True)
-Path(str(product["FUNC_1"])).write_bytes(cloudpickle.dumps(FUNC_1))
-# print output
-FUNC_1
-
-
-# %%
-def FUNC_2():
-    return "func 2"
-
-
-# pickle/store stuff to use later
-Path(str(product["FUNC_2"])).parent.mkdir(exist_ok=True, parents=True)
-Path(str(product["FUNC_2"])).write_bytes(cloudpickle.dumps(FUNC_2))
-# print output
-FUNC_2

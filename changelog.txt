@@ -1,12 +1,26 @@
-0.0.1
-Jan 5 2024
-- Add uv for dependency management
+0.0.5
+May 17 2024
+- Move Constants to src module
+- Use .bat scripts instead of .ipynb  notebooks for utility commands
 
+0.0.4
+March 22 2024
+- Pass in env object into dag
+- Use Python API i.e. build pipeline in python
+
+0.0.3
+March 5 2024
+- Rename task .py scripts to follow alphabetical convention i.e. IngestXyzTask, ProcessXyzTask, QuantifyXyzTask, ReportXyzTask, UploadXyzTask, 
+
+0.0.2
+March 4 2024
+- Use uv for package management and dependency resolution
+- Move Constants.py to the internal package instead of it being a task
 
 0.0.1
 June 9 2024
 - Add default/results pipeline.yaml
-- Add reports pipeline.yaml
+- Add reorts pipeline.yaml
 - Add placeholder/tamplate tasks.py files
 - Add changelog
 - Add gitignore file
