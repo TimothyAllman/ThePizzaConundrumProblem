@@ -8,7 +8,7 @@
 
 ## Description
 <!-- start description -->
-How definitie analysis of which pizza is the best in south africa
+A definitie analysis of which pizza is the best in south africa
 <!-- end description -->
 
 ## Getting the Project/CodeBase Setup
