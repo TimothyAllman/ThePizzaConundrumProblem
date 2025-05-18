@@ -1,8 +1,8 @@
 from multimethod import multimethod
 
-from ploomberpipelinetemplate.PizzaDataModule import PizzaDto
-from ploomberpipelinetemplate.PizzaFromRomansDataModule import PizzaFromRomansDto
+
 from thepizzaconundrumproblem.ConstantsDataModule import _PI
+from thepizzaconundrumproblem.PizzaDataModule import PizzaDto
 
 
 @multimethod

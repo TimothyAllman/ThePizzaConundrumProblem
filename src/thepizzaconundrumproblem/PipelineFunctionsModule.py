@@ -5,8 +5,8 @@ from ploomber import DAGConfigurator, SourceLoader
 from ploomber.tasks import NotebookRunner, PythonCallable
 from ploomber.products import File
 
-from ploomberpipelinetemplate.ConstantsForFilePathsDataModule import _NOTEBOOKS_FOLDER_NAME, _OUTPUT_FOLDER_NAME, _SHARED_VARIABLES_FOLDER_NAME
-from ploomberpipelinetemplate.EnvFileDataModule import EnvFileData
+from thepizzaconundrumproblem.ConstantsForFilePathsDataModule import _NOTEBOOKS_FOLDER_NAME, _OUTPUT_FOLDER_NAME, _SHARED_VARIABLES_FOLDER_NAME
+from thepizzaconundrumproblem.EnvFileDataModule import EnvFileData
 
 
 def CreatePipeline(

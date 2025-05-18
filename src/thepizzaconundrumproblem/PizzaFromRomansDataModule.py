@@ -1,4 +1,4 @@
-from ploomberpipelinetemplate.PizzaDataModule import PizzaDto
+from thepizzaconundrumproblem.PizzaDataModule import PizzaDto
 
 
 class PizzaFromRomansDto(PizzaDto):
