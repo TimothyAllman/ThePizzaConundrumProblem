@@ -1400,10 +1400,13 @@ wheels = [
 ]
 
 [[package]]
-name = "multimethods"
-version = "1.0.0"
+name = "multimethod"
+version = "2.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/61/74/0108cfa5490d02b5c1d81c50e1d6194fa17dadd5fdb7d4c269459b391664/multimethods-1.0.0.tar.gz", hash = "sha256:47ca00c145d520ee77463214ec9d1b2d0b0985d8c749957c6e5753a773b16fb7", size = 3065 }
+sdist = { url = "https://files.pythonhosted.org/packages/55/14/34e8c84ba4f1ab1186dc07426e0e84be71d3336cc57e8d076ee14331d50e/multimethod-2.0.tar.gz", hash = "sha256:c628b6d2e7d61fbe58484dd884d990901e8314faf58af062e72b65e3423cb109", size = 16065 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/84/42/a285fc4b89b3a249538954779cd4082a85bf35dc7d0a9c93e48e146e3dc7/multimethod-2.0-py3-none-any.whl", hash = "sha256:45aa231dc9dbb7f980c0f2ad8179e2c2b72a8cd5c7d7534337be66dde29d35be", size = 9836 },
+]
 
 [[package]]
 name = "narwhals"
@@ -1893,47 +1896,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/6d/18/5ff429a1afdb54eca8bec68c1ea105224a5480cff4b9d7412c5e2d19faa4/ploomber-scaffold-0.3.1.tar.gz", hash = "sha256:9ad42a891185f7595eb4f44c00b1fb5d1d9332b50f1769e2b2c6f21bc00c0ee1", size = 36325 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c6/5f/887d2591014afa96b73f03b114b2120f8bc9930f803d257ccd4404572e34/ploomber_scaffold-0.3.1-py3-none-any.whl", hash = "sha256:691410206ee6eba598439630f681e8e1802c6391e8b7f8301103a09cb28d0bad", size = 40983 },
-]
-
-[[package]]
-name = "ploomberpipelinetemplate"
-version = "0.0.0"
-source = { editable = "." }
-dependencies = [
-    { name = "cloudpickle" },
-    { name = "great-tables" },
-    { name = "kaleido" },
-    { name = "multimethods" },
-    { name = "pandas" },
-    { name = "ploomber" },
-    { name = "plotly" },
-    { name = "python-pptx" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ipykernel" },
-    { name = "pytest" },
-    { name = "uv" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "cloudpickle" },
-    { name = "great-tables" },
-    { name = "kaleido", specifier = "==0.2.0" },
-    { name = "multimethods" },
-    { name = "pandas" },
-    { name = "ploomber" },
-    { name = "plotly" },
-    { name = "python-pptx" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "ipykernel" },
-    { name = "pytest" },
-    { name = "uv" },
 ]
 
 [[package]]
@@ -2723,6 +2685,47 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/8a/11/965c6fd8e5cc254f1fe142d547387da17a8ebfd75a3455f637c663fb38a0/terminado-0.18.1.tar.gz", hash = "sha256:de09f2c4b85de4765f7714688fff57d3e75bad1f909b589fde880460c753fd2e", size = 32701 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6a/9e/2064975477fdc887e47ad42157e214526dcad8f317a948dee17e1659a62f/terminado-0.18.1-py3-none-any.whl", hash = "sha256:a4468e1b37bb318f8a86514f65814e1afc977cf29b3992a4500d9dd305dcceb0", size = 14154 },
+]
+
+[[package]]
+name = "thepizzaconundrumproblem"
+version = "0.0.0"
+source = { editable = "." }
+dependencies = [
+    { name = "cloudpickle" },
+    { name = "great-tables" },
+    { name = "kaleido" },
+    { name = "multimethod" },
+    { name = "pandas" },
+    { name = "ploomber" },
+    { name = "plotly" },
+    { name = "python-pptx" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+    { name = "pytest" },
+    { name = "uv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "cloudpickle" },
+    { name = "great-tables" },
+    { name = "kaleido", specifier = "==0.2.0" },
+    { name = "multimethod" },
+    { name = "pandas" },
+    { name = "ploomber" },
+    { name = "plotly" },
+    { name = "python-pptx" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "ipykernel" },
+    { name = "pytest" },
+    { name = "uv" },
 ]
 
 [[package]]

@@ -1,5 +1,5 @@
 [project]
-name = "ploomberpipelinetemplate"
+name = "thepizzaconundrumproblem"
 version = "0.0.0" #in version.txt
 description = "Add your description here"
 readme = "README.md"
@@ -31,7 +31,7 @@ dependencies = [
     "great-tables",
 
     #for multiple dispacth
-    "multimethods",
+    "multimethod",
 ]
 
 
