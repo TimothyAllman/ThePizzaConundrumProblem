@@ -29,6 +29,9 @@ dependencies = [
 
     #for nice tables
     "great-tables",
+
+    #for multiple dispacth
+    "multimethods",
 ]
 
 
