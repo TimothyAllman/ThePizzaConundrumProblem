@@ -1,5 +1,5 @@
-from ploomberpipelinetemplate.EnvFileDataModule import EnvFileData
-from ploomberpipelinetemplate.PipelineFunctionsModule import CreatePipeline
+from thepizzaconundrumproblem.EnvFileDataModule import EnvFileData
+from thepizzaconundrumproblem.PipelineFunctionsModule import CreatePipeline
 
 
 myEnvDictionary = EnvFileData(
