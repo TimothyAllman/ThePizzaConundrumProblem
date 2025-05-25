@@ -34,8 +34,8 @@ product = None
 # python imports
 import polars as pl
 
-from thepizzaconundrumproblem.ConstantsDataModule import _PI
-from thepizzaconundrumproblem.PizzaFromNySliceDataModule import _NY_REGULAR_BASE_PIZZA, PizzaFromNySliceLargeBaseDto, PizzaFromNySliceRegularDto
+from thepizzaconundrumproblem.PizzaFromNySliceDataModule import PizzaFromNySliceLargeBaseDto
+from thepizzaconundrumproblem.PizzaFromNySliceDataModule import PizzaFromNySliceRegularDto
 from thepizzaconundrumproblem.PizzaFromRomansDataModule import _ROMANS_THICK_BASE_PIZZA
 
 # %%
@@ -44,7 +44,7 @@ from thepizzaconundrumproblem.PizzaFromRomansDataModule import _ROMANS_THICK_BAS
 # %%
 _MY_LIST_OF_ALL_PIZZAS_DF = pl.from_dicts(
     [
-        vars(_NY_REGULAR_BASE_PIZZA),
+        vars(PizzaFromNySliceRegularDto()),
         vars(PizzaFromNySliceLargeBaseDto()),
         _ROMANS_THICK_BASE_PIZZA.__dict__,
     ],
