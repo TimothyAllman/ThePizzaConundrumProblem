@@ -6,7 +6,7 @@ class EnvFileData:
         self,
         myDate: str,
         myPrefix: str = "Prefix",
-        mySuffix: int = "Suffix",
+        mySuffix: str = "Suffix",
     ):
         self.MY_PREFIX = myPrefix
         self.MY_SUFFIX = mySuffix

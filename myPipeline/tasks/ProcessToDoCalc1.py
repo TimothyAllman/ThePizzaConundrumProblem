@@ -30,7 +30,10 @@ product = None
 # %%
 # your code here...
 
-import ploomberpipelinetemplate.ConstantsDataModule
+from thepizzaconundrumproblem.ConstantsDataModule import _MY_CONSTANT_1, _MY_CONSTANT_2
 
 # %%
-ploomberpipelinetemplate.ConstantsDataModule.MY_CONSTANT_1
+_MY_CONSTANT_1
+
+#%% 
+_MY_CONSTANT_2

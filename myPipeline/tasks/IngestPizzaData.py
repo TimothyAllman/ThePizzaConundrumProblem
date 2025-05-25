@@ -29,3 +29,26 @@ product = None
 
 # %%
 # your code here...
+
+# %%
+# python imports
+import polars as pl
+
+from thepizzaconundrumproblem.ConstantsDataModule import _PI
+from thepizzaconundrumproblem.PizzaFromNySliceDataModule import _NY_REGULAR_BASE_PIZZA, PizzaFromNySliceLargeBaseDto, PizzaFromNySliceRegularDto
+from thepizzaconundrumproblem.PizzaFromRomansDataModule import _ROMANS_THICK_BASE_PIZZA
+
+# %%
+
+
+# %%
+_MY_LIST_OF_ALL_PIZZAS_DF = pl.from_dicts(
+    [
+        vars(_NY_REGULAR_BASE_PIZZA),
+        vars(PizzaFromNySliceLargeBaseDto()),
+        _ROMANS_THICK_BASE_PIZZA.__dict__,
+    ],
+)
+_MY_LIST_OF_ALL_PIZZAS_DF
+
+# %%
