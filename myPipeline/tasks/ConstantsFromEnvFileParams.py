@@ -40,8 +40,8 @@ from pathlib import Path
 # %%
 INPUT_DATE_AS_A_DATETIME = dt.datetime.strptime(MY_DATE, "%Y-%m-%d")
 # pickle/store stuff to use later
-Path(str(product["THING_1"])).parent.mkdir(exist_ok=True, parents=True)
-Path(str(product["THING_1"])).write_bytes(pickle.dumps(INPUT_DATE_AS_A_DATETIME))
+Path(str(product["INPUT_DATE_AS_A_DATETIME"])).parent.mkdir(exist_ok=True, parents=True)
+Path(str(product["INPUT_DATE_AS_A_DATETIME"])).write_bytes(pickle.dumps(INPUT_DATE_AS_A_DATETIME))
 # print output
 INPUT_DATE_AS_A_DATETIME
 
