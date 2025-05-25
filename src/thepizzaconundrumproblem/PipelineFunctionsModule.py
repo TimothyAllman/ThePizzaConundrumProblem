@@ -2,8 +2,8 @@ import shutil
 from pathlib import Path
 
 from ploomber import DAGConfigurator, SourceLoader
-from ploomber.tasks import NotebookRunner, PythonCallable
 from ploomber.products import File
+from ploomber.tasks import NotebookRunner, PythonCallable
 
 from thepizzaconundrumproblem.ConstantsForFilePathsDataModule import _NOTEBOOKS_FOLDER_NAME, _OUTPUT_FOLDER_NAME, _SHARED_VARIABLES_FOLDER_NAME
 from thepizzaconundrumproblem.EnvFileDataModule import EnvFileData
@@ -13,7 +13,6 @@ def CreatePipeline(
     envParams: EnvFileData,
     clean_up=False,
 ):
-
     # create any top level folders
     outputFolderPath = Path("myPipeline", _OUTPUT_FOLDER_NAME)
     if clean_up and outputFolderPath.exists():
@@ -122,9 +121,9 @@ def CreatePipeline(
     #
     # ingestation/fetch raw data tasks
     taskIngestData1 = NotebookRunner(
-        source=loader["IngestData1.py"],
+        source=loader["IngestPizzaData.py"],
         product={
-            "nb": File(outputFolderPath / myFolderName / _NOTEBOOKS_FOLDER_NAME / "IngestData1.ipynb"),
+            "nb": File(outputFolderPath / myFolderName / _NOTEBOOKS_FOLDER_NAME / "IngestPizzaData.ipynb"),
             # "data": File(out / "clean.csv"),
         },
         dag=myPipelineDag,
