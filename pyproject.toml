@@ -16,7 +16,8 @@ dependencies = [
     "cloudpickle",
 
     #for data manipulation
-    "pandas",
+    # "polars==1.30.0",
+    "polars-lts-cpu",
 
     #for graphs and visualisations
     "plotly",
@@ -37,7 +38,6 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "uv",        #for package managment and dependency resolution
     "ipykernel", #for running ipynb files inside VsCode 
     "pytest",    #for tests
 ]
