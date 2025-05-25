@@ -1,6 +1,5 @@
 from multimethod import multimethod
 
-
 from thepizzaconundrumproblem.ConstantsDataModule import _PI
 from thepizzaconundrumproblem.PizzaDataModule import PizzaDto
 
@@ -15,3 +14,15 @@ def WorkOutArea(
     area = pi * r * r
 
     return area
+
+
+# @multimethod
+# def WorkOutPricePerCmSquared(
+#     pizza: PizzaDto,
+# ):
+#     price = pizza.PriceInRands
+#     area = WorkOutArea(pizza)
+
+#     costPerUnit = price / area
+
+#     return costPerUnit
