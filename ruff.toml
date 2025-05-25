@@ -20,4 +20,4 @@ ignore = [
 ]
 
 [isort]
-split-on-trailing-comma = true
+force-single-line = true
